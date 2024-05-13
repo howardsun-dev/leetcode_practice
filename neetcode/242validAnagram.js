@@ -6,14 +6,14 @@
 var isAnagram = function (s, t) {
   const charMap = new Map();
 
-  //   if (
-  //     s.length <= 1 ||
-  //     t.length <= 1 ||
-  //     s.length > 5 * 10 ** 4 ||
-  //     t.length > 5 * 10 ** 4
-  //   ) {
-  //     return false;
-  //   }
+  if (
+    s.length <= 1 ||
+    t.length <= 1 ||
+    s.length > 5 * 10 ** 4 ||
+    t.length > 5 * 10 ** 4
+  ) {
+    return false;
+  }
 
   for (let i = 0; i < s.length; i++) {
     const sChar = s[i];
