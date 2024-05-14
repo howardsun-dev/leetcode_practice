@@ -28,4 +28,4 @@ var twoSum = function (nums, target) {
   return false;
 };
 
-console.log(twoSum([3, 2, 4], 6));
+console.log(twoSum([2, 3, 4], 6));
