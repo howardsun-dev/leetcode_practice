@@ -14,7 +14,7 @@ var twoSum = function (nums, target) {
       // Check if the complement is already in the map and return the indices is present in map
       return [compMap.get(complement), i];
     } else {
-      compMap.set(nums[i], i); // If not in the map, set the complement with inde
+      compMap.set(nums[i], i); // If not in the map, set the complement with index
     }
   }
 };
