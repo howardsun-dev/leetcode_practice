@@ -9,6 +9,5 @@ def groupAnagrams(strs):
     
     return sorted(anagrams.values(), key=len)
 
-# Example usage
 strs = ['eat', 'tea', 'tan', 'ate', 'nat', 'bat']
 print(groupAnagrams(strs))
