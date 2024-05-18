@@ -1,7 +1,8 @@
 from collections import defaultdict
+from typing import List, Dict
 
-def groupAnagrams(strs):
-    anagrams = defaultdict(list)
+def groupAnagrams(strs: List[str]) -> List[List[str]]:
+    anagrams: Dict[str, List[str]] = defaultdict(list)
     
     for word in strs:
         sorted_word = ''.join(sorted(word))
