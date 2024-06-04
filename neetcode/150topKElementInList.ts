@@ -23,9 +23,6 @@ const topKFrequent = (nums: number[], k: number): number[] => {
   // Sort the array in descending order based on the frequency of each number
   freqArray.sort((a, b) => b[1] - a[1]);
 
-  // Log the length of the sorted frequency array for debugging purposes
-  console.log(freqArray.length);
-
   // Extract the top K elements based on their frequency
   let topKElements = freqArray.slice(0, k).map((pair) => pair[0]);
 
