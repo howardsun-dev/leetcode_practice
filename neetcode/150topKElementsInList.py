@@ -14,4 +14,4 @@ def top_k_elements(nums: List[int], k: int) -> List[int]:
     # Convert dict to list of of (number, frequency) pairs
     freq_list = list(freq_dict.items())
 
-    
+    freq_list
