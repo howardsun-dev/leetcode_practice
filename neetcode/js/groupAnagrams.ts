@@ -14,5 +14,5 @@ function groupAnagrams(strs: string[]): string[][] {
   return Object.values(anagrams).sort((a, b) => a.length - b.length);
 }
 
-const strs = ['eat', 'tea', 'tan', 'ate', 'nat', 'bat'];
-console.log(groupAnagrams(strs));
+const words = ['eat', 'tea', 'tan', 'ate', 'nat', 'bat'];
+console.log(groupAnagrams(words));
