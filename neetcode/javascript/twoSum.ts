@@ -1,4 +1,4 @@
-function twoSum(nums: number[], target: number) {
+function twoSum(nums: number[], target: number): boolean | number[] {
   const numberList: { [key: number]: number } = {};
 
   for (let i = 0; i < nums.length; i++) {
@@ -10,9 +10,11 @@ function twoSum(nums: number[], target: number) {
 
     numberList[nums[i]] = i;
   }
+
+  return false;
 }
 
-let numsList = [4, 5, 6];
+let numsList = [1, 2, 3, 4, 8];
 let tgt = 10;
 
 console.log(twoSum(numsList, tgt));
