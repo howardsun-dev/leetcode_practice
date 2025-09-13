@@ -1,13 +1,27 @@
-function twoSum(nums: number[], target: number): number[] {
-  const numToIndex = new Map();
-  const resultsArray = [];
+function twoSum(nums: number[], target: number) {
+  const numberList: { [key: number]: number } = {};
 
-  console.log('test');
-  console.log(nums);
+  for (let i = 0; i < nums.length; i++) {
+    let complement = target - nums[i];
+
+    if (Object.hasOwn(numberList, complement)) {
+      return [numberList[complement], i];
+    }
+
+    numberList[nums[i]] = i;
+  }
+}
+
+let numsList = [4, 5, 6];
+let tgt = 10;
+
+console.log(twoSum(numsList, tgt));
+
+/*   const numToIndex = new Map();
+  const resultsArray = [];
 
   for (let num of nums) {
     let complement = target - num;
-    console.log(complement);
 
     if (numToIndex.has(complement)) {
       resultsArray.push(nums.indexOf(complement));
@@ -17,13 +31,4 @@ function twoSum(nums: number[], target: number): number[] {
     numToIndex.set(num, nums.indexOf(num));
   }
 
-  console.log(numToIndex);
-  console.log(resultsArray);
-
-  return resultsArray;
-}
-
-let nums = [4, 5, 6];
-let target = 10;
-
-console.log(twoSum(nums, target));
+  return resultsArray; */
